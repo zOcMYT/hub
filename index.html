@@ -88,13 +88,17 @@
         </style>
     </head>
     <body>
-        
-        <audio src="bg.mp3" autoplay loop></audio>
-        Notification.requestPermission().then(function(permission) {
+<script>
+      Notification.requestPermission().then(function(permission) {
   if (permission === "granted") {
     console.log("Notification permission granted.");
   }
 });
+    </script>
+        
+        <audio src="bg.mp3" autoplay loop></audio>
+        
+  
 
         
         <!--Navigation-->
