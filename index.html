@@ -89,25 +89,11 @@
     </head>
     <body>
 <script>
-      // This function should be called inside a click event handler
-async function requestNotificationPermission() {
-  if (!("Notification" in window)) {
-    console.error("This browser does not support desktop notification");
-    return;
-  }
-
-  const permission = await Notification.requestPermission();
-  
+      Notification.requestPermission().then(function(permission) {
   if (permission === "granted") {
-    console.log("Permission granted.");
-    // Proceed with the feature
-  } else {
-    console.log("Permission denied or dismissed.");
+    console.log("Notification permission granted.");
   }
-}
-
-// Example usage:
-// document.getElementById('my-button').addEventListener('click', requestNotificationPermission);
+});', requestNotificationPermission);
     </script>
         
         <audio src="bg.mp3" autoplay loop></audio>
