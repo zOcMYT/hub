@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>ZOCMYT</title>
+        <title>ZOCMYT - Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
@@ -88,20 +88,36 @@
         </style>
     </head>
     <body>
+<script>
+      sound.requestPermission().then(function(permission) {
+  if (permission === "granted") {
+    console.log("Notification permission granted.");
+  }
+});', requestNotificationPermission);
+    </script>
+        
+        <audio src="bg.mp3" autoplay loop></audio>
+        
+  
+
+        
         <!--Navigation-->
         <ul class="nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="games.html">Games</a></li>
             <li><a href="tools.html">Tools</a></li>
             <li><a href="models.html">Models</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
 
         <h1><strong>Main</strong> hub for all my <strong>silly</strong> projects.</h1>
 
         <ul class="listItem">
             <li><a href="https://www.youtube.com/@zOcM">YouTube</a></li>
+            <li><a href="https://www.youtube.com/@VRGamer262">YouTube - VRGamer262</a></li>
             <li><a href="https://makerworld.com/en/@wpl435">MakerWorld</a></li>
             <li><a href="https://github.com/zOcMYT">GitHub</a></li>
+            <li><a href="https://github.com/VRGamer262Real">GitHub - VRGamer262</a></li>
         </ul>
 
     </body>
